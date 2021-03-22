@@ -1,0 +1,395 @@
+@keyframes deng {
+    0% {
+        opacity: 1.0;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes tu {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -4310px 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes dian {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes zhuan {
+    0% {
+        background-position: -171px -165px;
+    }
+    100% {
+        background-position: -685px -165px;
+    }
+}
+
+body {
+    margin: 0 auto;
+    height: 1218px;
+    max-width: 640px!important;
+    min-width: 320px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+}
+
+.bgimage {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    height: 1218px;
+    background: url(../images/backg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.ihead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    margin: 0;
+}
+
+section div {
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+    width: 47px;
+    height: 58px;
+}
+
+
+/* div[class^="below"] {
+    display: none;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../images/spirit.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+} */
+
+div[class^="word"] {
+    background-image: url(../images/spirit.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+}
+
+.word1 {
+    background-position: -345px 0;
+    /* transform: translateZ(29px); */
+}
+
+.word2 {
+    background-position: -433px 0;
+}
+
+.word3 {
+    background-position: -520px 0;
+}
+
+.word4 {
+    background-position: -607px 0;
+}
+
+.word5 {
+    background-position: -693px 0;
+}
+
+.word6 {
+    background-position: -781px 0;
+}
+
+.deng {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 143px;
+}
+
+.left,
+.left1 {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    width: 80px;
+    height: 138px;
+}
+
+.left {
+    float: left;
+    margin-left: 19px;
+}
+
+.left1 {
+    float: right;
+    margin-right: 19px;
+}
+
+.left .two img {
+    transform: translateX(-86px);
+}
+
+.left1 .two img {
+    transform: translateX(-86px);
+}
+
+.left .two,
+.left1 .two {
+    float: left;
+    height: 138px;
+    width: 80px;
+}
+
+.left .one,
+.left1 .one {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 138px;
+    width: 100%;
+}
+
+.ibody {
+    overflow: hidden;
+    position: relative;
+    top: 245px;
+    width: 100%;
+    height: 330px;
+    margin: 0;
+    padding: 0;
+}
+
+.fu {
+    position: absolute;
+    top: 85px;
+    left: 30px;
+    width: 145px;
+    height: 148px;
+}
+
+.fu img {
+    transform: translateX(-181px);
+}
+
+.tu {
+    display: none;
+    position: absolute;
+    right: -15px;
+    width: 350px;
+    height: 330px;
+    background-image: url(../images/yueli.png);
+    background-repeat: no-repeat;
+}
+
+.dqian {
+    perspective: 700px;
+    margin-top: 236px;
+    width: 100%;
+    height: 238px;
+}
+
+.xqian {
+    overflow: visible;
+    position: relative;
+    margin: 0 auto;
+    width: 160px;
+    height: 238px;
+    background: url(../images/spirit.png) no-repeat;
+    background-position: 0 -165px;
+}
+
+.qian1,
+.qian2,
+.qian3,
+.qian4,
+.qian5,
+.qian6 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/spirit.png) no-repeat;
+}
+
+.qian1 {
+    background-position: -171px -165px;
+    transform: translateZ(150px);
+}
+
+.qian2 {
+    background-position: -342px -165px;
+    transform: rotateY(60deg) translateZ(150px);
+}
+
+.qian3 {
+    background-position: -342px -165px;
+    transform: rotateY(120deg) translateZ(150px);
+}
+
+.qian4 {
+    background-position: -514px -165px;
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.qian5 {
+    background-position: -514px -165px;
+    transform: rotateY(240deg) translateZ(150px);
+}
+
+.qian6 {
+    background-position: -684px -165px;
+    transform: rotateY(300deg) translateZ(150px);
+}
+
+.dian {
+    margin: 37px auto;
+    width: 204px;
+    height: 67px;
+    background: url(../images/spirit.png) no-repeat;
+    background-position: 0 -933px;
+    animation: dian 1s linear infinite;
+}
+
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1218px;
+    background-color: rgba(58, 56, 56, .9);
+}
+
+.zhuan {
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: 200px;
+    position: absolute;
+    width: 160px;
+    height: 238px;
+    background: url(../images/spirit.png) no-repeat;
+    background-position: -171px -165px;
+    animation: zhuan 1.5s linear infinite alternate;
+}
+
+.guan {
+    position: absolute;
+    top: 500px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/spirit.png) no-repeat;
+    background-position: 0 -852px;
+}
+
+.chu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -165.75px;
+    width: 331.5px;
+    height: 495.55px;
+}
+
+.chu1,
+.chu2,
+.chu3,
+.chu4,
+.chu5,
+.chu6,
+.chu7,
+.chu8,
+.chu9,
+.chu10,
+.chu11,
+.chu12 {
+    display: none;
+    position: absolute;
+    width: 331.5px;
+    height: 495.55px;
+    background: url(../images/qian.png) no-repeat;
+    background-size: 2031.5px 998.75px;
+}
+
+.chu2 {
+    background-position: -340px 0;
+}
+
+.chu3 {
+    background-position: -680px 0;
+}
+
+.chu4 {
+    background-position: -1020px 0;
+}
+
+.chu5 {
+    background-position: -1360px 0;
+}
+
+.chu6 {
+    background-position: -1700px 0;
+}
+
+.chu7 {
+    background-position: 0 -504.05px;
+}
+
+.chu8 {
+    background-position: -340px -504.05px;
+}
+
+.chu9 {
+    background-position: -680px -504.05px;
+}
+
+.chu10 {
+    background-position: -1020px -504.05px;
+}
+
+.chu11 {
+    background-position: -1360px -504.05px;
+}
+
+.chu12 {
+    background-position: -1700px -504.05px;
+}

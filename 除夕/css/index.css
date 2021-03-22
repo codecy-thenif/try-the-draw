@@ -1,0 +1,16 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* color: #666; */
+    /* background-image: url(images/background.jpg) repeat fixed top; */
+    /* background-color: pink; */
+}
+
+section {
+    width: 100%;
+}

@@ -1,0 +1,70 @@
+@font-face {
+    /*1. 这个字体名称要注意 icomoon*/
+font-family: 'icomoon';
+/*2. 一定要注意路径的问题*/
+src:  url('fonts/icomoon.eot?7kkyc2');
+src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+url('fonts/icomoon.woff?7kkyc2') format('woff'),
+url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, 'Times New Roman', Times, serif;
+    color: #666;
+}
+
+.clearfix::after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>抽上上签，行上上运</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .clearfix::after {
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: "";
+            height: 0;
+        }
+        
+        body {
+            margin: 0 auto;
+            width: 100%;
+            height: 1218px;
+            max-width: 640px;
+            min-width: 320px;
+            font-size: 14px;
+            line-height: 1.5;
+            /* background-image: url(images/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: cover; */
+        }
+        
+        section {
+            overflow: hidden;
+            width: 100%;
+            height: 1218px;
+            padding: 0;
+            margin: 0;
+            background-image: url(images/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: cover;
+            vertical-align: middle;
+        }
+        
+        .word {
+            display: flex;
+            margin-top: 93px;
+        }
+        
+        .ihead ul li {
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            flex: 1;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="ihead">
+            <ul class="word">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

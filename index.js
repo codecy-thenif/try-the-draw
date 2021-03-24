@@ -2,36 +2,37 @@ window.addEventListener('load', function() {
     var iword = document.getElementsByClassName('iword');
     var flag = 1;
     for (var i = 0; i < iword.length; i++) {
-        var iword1 = iword[i];
-        iword1.addEventListener('touchend', function() {
-            flag++;
-            var flag1 = flag % 2;
-            if (flag1 !== 0) {
+        const iword1 = iword[i];
+        iword1.addEventListener('touched', function() {
+            if (isDoing) {
+                isDoing = false;
                 this.style.transform = 'rotateX(360deg)';
                 this.style.transition = 'all 1s';
-                flag++;
-            } else {
-                this.style.transform = '';
-                this.style.transition = '';
-                flag++;
+                setTimeout(() => {
+                    this.style.transform = '';
+                    this.style.transition = '';
+                    isDoing = true
+                }, 1000)
             }
         })
     }
+    var isDoing = true;
     for (var i = 0; i < iword.length; i++) {
-        var iword1 = iword[i];
+        const iword1 = iword[i];
         iword1.addEventListener('click', function() {
-            var flag1 = flag % 2;
-            if (flag1 !== 0) {
+            if (isDoing) {
+                isDoing = false;
                 this.style.transform = 'rotateX(360deg)';
                 this.style.transition = 'all 1s';
-                flag++;
-            } else {
-                this.style.transform = '';
-                this.style.transition = '';
-                flag++;
+                setTimeout(() => {
+                    this.style.transform = '';
+                    this.style.transition = '';
+                    isDoing = true
+                }, 1000)
             }
         })
-    }
+
+    };
     var one = document.getElementsByClassName('one');
     for (var i = 0; i <= 1; i++) {
         one[i].addEventListener('touchend', function() {
